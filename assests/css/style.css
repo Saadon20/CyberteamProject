@@ -1,0 +1,162 @@
+:root{
+    --dark-color : #19283f;
+    --green-color : #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    height: 100%; ;
+}
+
+.main-btn{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.main-btn:hover {
+    color: var(--green-color);
+}
+
+.main-title::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: -20px;
+    left:50%;
+    transform: translateX(-50%);
+
+
+}
+.circle-img {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Make height equal to width for a perfect circle */
+    border-radius: 50%; /* This makes the image circular */
+    overflow: hidden; /* Ensures the image fits within the circle */
+    object-fit: cover; /* Scales the image to cover the circle */
+    border: 2px solid #000; /* Optional: Add a border */
+  }
+/* Start Navbar*/
+.navbar{
+   background-color:  var(--dark-color); 
+}
+.navbar .navbar-nav .nav-link{
+    color: white;
+} 
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+     color: var(--green-color) ;
+}
+
+.navbar .search {
+    border-left: 1px solid var(--green-color);
+}
+.navbar .search i {
+    color: var(--green-color);
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+
+/* End Navbar*/
+/*Start Landing*/
+.landing {
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+    padding: 20px;
+}
+.section-info {
+    background-color: #1c2b40; /* Couleur complémentaire à #19283f pour la section */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombre douce */
+}
+.info-title {
+    color: #f1f1f1; /* Texte clair pour le contraste */
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.info-text {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.info-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Coins arrondis pour l'image */
+}
+/*End Landing*/
+
+.icon-design {
+    font-size: 2rem; /* Adjust size */
+    color: #fff; /* White color */
+    padding: 10px;
+    background-color: var(--red-color); /* Green background */
+    border-radius: 50%; /* Circular background */
+    display: inline-block;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+.icon-design:hover {
+    background-color: var(--dark-color); /* Darker green when hovered */
+    transform: scale(1.1); /* Slightly larger on hover */
+}
+/*start features*/
+/*end features*/
+/* Styles des icônes */
+.icon-design {
+    color: #007bff; /* Bleu pour les icônes */
+    background-color: #e9ecef; /* Fond clair pour contraste */
+    padding: 20px;
+    border-radius: 50%; /* Cercle autour de l'icône */
+}
+
+/* Styles des cartes */
+.feature-card {
+    background-color: var(--dark-color); /* Gris clair pour l'arrière-plan */
+    border-radius: 10px; /* Coins arrondis */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px); /* Déplacement léger au survol */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Ombre au survol */
+}
+
+.feature-card h4 {
+    color: #333; /* Titre en gris foncé */
+}
+
+.feature-card p {
+    font-size: 0.9rem; /* Texte légèrement plus petit */
+    line-height: 1.6; /* Espacement pour lisibilité */
+}
+
+/*Start subscribe*/
+
+
+/*end subscribe*/
+
+/* Spacer with light complementary color */
+.spacer {
+    height: 50px; /* Adjust height as needed */
+    background-color: var(--green-color,); /* Light grayish-blue color matching dark themes */
+    margin: 0; /* No extra margins */
+}
+
+
+/*Start footer*/
+.footer{
+    background-color:  var(--dark-color);
+}
+/*end footer*/

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="assests/css/login.css">
+    <link rel="stylesheet" href="assests/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assests/css/signup.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <header>Signup</header>
+
+        <form id="signup-form" action="home.html" method="POST">
+            <div class="field email-field">
+                <div class="input-field">
+                    <input type="email" placeholder="Enter your email" class="email" id="email" required>
+                </div>
+                <span class="error email-error">
+                    <i class="bx bx-error-circle error-icon"></i>
+                    <p class="error-text">Please enter a valid email</p>
+                </span>
+            </div>
+            <div class="field create-password">
+                <div class="input-field">
+                    <input type="password" placeholder="Create Password" class="password" id="password" required />
+                    <i class="bx bx-hide show-hide"></i>
+                </div>
+                <span class="error password-error">
+                    <i class="bx bx-error-circle error-icon"></i>
+                    <p class="error-text">Please enter at least 8 characters with a number, symbol, small and capital letter</p>
+                </span>
+            </div>
+            <div class="field confirm-password">
+                <div class="input-field">
+                    <input type="password" placeholder="Confirm Password" class="cPassword" id="confirm-password" required />
+                    <i class="bx bx-hide show-hide"></i>
+                </div>
+                <span class="error cPassword-error">
+                    <i class="bx bx-error-circle error-icon"></i>
+                    <p class="error-text">Passwords don't match</p>
+                </span>
+            </div>
+            <div class="input-field button">
+                <input type="submit" value="Submit Now" />
+            </div>
+        </form>
+    </div>
+
+    <script src="assests/js/bootstrap.bundle.min.js"></script>
+    <script src="assests/js/signup.js"></script>
+</body>
+</html>

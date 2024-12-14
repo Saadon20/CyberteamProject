@@ -1,0 +1,50 @@
+:root{
+    --dark-color : #19283f;
+    --green-color : #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+}
+
+.subscribe {
+    background-color: var(--dark-color);
+}
+/* General card styling */
+.card {
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Highlight middle package */
+.pack-front {
+    z-index: 2;
+    transform: scale(1.1); /* Slightly larger */
+    background-color: #e9f7f2; /* Light greenish highlight */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin-top: -30px; /* Raise middle card slightly */
+}
+
+/* Position left and right packages at the same level */
+.pack-behind {
+    z-index: 1;
+    opacity: 0.9; /* Slightly dimmed */
+}
+
+/* Pricing styles */
+.pricing {
+    font-size: 1.2rem;
+}
+
+.text-decoration-line-through {
+    color: #6c757d; /* Muted color for crossed-out prices */
+}
+
+/* Button customization */
+.btn {
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+}
